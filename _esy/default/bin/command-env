@@ -1,0 +1,102 @@
+# Command environment
+
+#
+# Built-in
+#
+export ESY__ROOT_PACKAGE_CONFIG_PATH="C:\Users\floeh\Desktop\INSA\4A\Projet_OCaml\package.json"
+export ='C:=C:\Users\floeh\Desktop\INSA\4A\Projet_OCaml'
+export ALLUSERSPROFILE='C:\ProgramData'
+export ANDROID_HOME='C:\Users\floeh\AppData\Local\Android\Sdk'
+export ANDROID_SDK_ROOT='C:\Users\floeh\AppData\Local\Android\Sdk'
+export APPDATA='C:\Users\floeh\AppData\Roaming'
+export CHOCOLATEYINSTALL='C:\ProgramData\chocolatey'
+export CHOCOLATEYLASTPATHUPDATE='132774995651360831'
+export CHROME_CRASHPAD_PIPE_NAME='\\.\pipe\crashpad_22320_EANQSSAFPKHDHHXO'
+export COMMONPROGRAMFILES='C:\Program Files\Common Files'
+export COMMONPROGRAMFILES(X86)='C:\Program Files (x86)\Common Files'
+export COMMONPROGRAMW6432='C:\Program Files\Common Files'
+export COMPUTERNAME='MSI'
+export COMSPEC='C:\WINDOWS\system32\cmd.exe'
+export CONFIGSETROOT='C:\WINDOWS\ConfigSetRoot'
+export DRIVERDATA='C:\Windows\System32\Drivers\DriverData'
+export HOMEDRIVE='C:'
+export HOMEPATH='\Users\floeh'
+export JAVA_HOME='C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot'
+export LOCALAPPDATA='C:\Users\floeh\AppData\Local'
+export LOGONSERVER='\\MSI'
+export MAVEN_HOME='C:\Program Files\apache-maven-3.8.3\bin'
+export NUMBER_OF_PROCESSORS='12'
+export ONEDRIVE='C:\Users\floeh\OneDrive'
+export ONEDRIVECONSUMER='C:\Users\floeh\OneDrive'
+export ORIGINAL_XDG_CURRENT_DESKTOP='undefined'
+export OS='Windows_NT'
+export PATH='C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin;C:\Windows;C:\Windows\System32;C:\Windows\System32\OpenSSh;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS;C:\Program Files\apache-maven-3.8.3\bin;C:\Users\floeh\AppData\Local\Microsoft\WindowsApps;C:\Users\floeh\AppData\Local\atom\bin;C:\Users\floeh\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\floeh\AppData\Roaming\Composer\vendor\bin;C:\Users\floeh\AppData\Local\Microsoft\WindowsApps;C:\Users\floeh\.dotnet\tools;C:\Users\floeh\AppData\Roaming\npm;C:\Users\floeh\AppData\Local\Android\Sdk\tool;C:\Program Files\apache-maven-3.8.3\bin;C:\Program Files\Eclipse Adoptium\jdk-11.0.13.8-hotspot\bin;'
+export PATHEXT='.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+export PROCESSOR_ARCHITECTURE='AMD64'
+export PROCESSOR_IDENTIFIER='Intel64 Family 6 Model 165 Stepping 2, GenuineIntel'
+export PROCESSOR_LEVEL='6'
+export PROCESSOR_REVISION='a502'
+export PROGRAMDATA='C:\ProgramData'
+export PROGRAMFILES='C:\Program Files'
+export PROGRAMFILES(X86)='C:\Program Files (x86)'
+export PROGRAMW6432='C:\Program Files'
+export PSMODULEPATH='C:\Users\floeh\Documents\WindowsPowerShell\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules'
+export PUBLIC='C:\Users\Public'
+export SESSIONNAME='Console'
+export SYSTEMDRIVE='C:'
+export SYSTEMROOT='C:\WINDOWS'
+export TEMP='C:\Users\floeh\AppData\Local\Temp'
+export TMP='C:\Users\floeh\AppData\Local\Temp'
+export USERDOMAIN='MSI'
+export USERDOMAIN_ROAMINGPROFILE='MSI'
+export USERNAME='floeh'
+export USERPROFILE='C:\Users\floeh'
+export VBOX_MSI_INSTALL_PATH='C:\Program Files\Oracle\VirtualBox\'
+export VBOX_USER_HOME='C:\vms\.VirtualBox'
+export WINDIR='C:\WINDOWS'
+export TERM_PROGRAM='vscode'
+export TERM_PROGRAM_VERSION='1.62.2'
+export LANG='fr_FR.UTF-8'
+export COLORTERM='truecolor'
+export VSCODE_GIT_IPC_HANDLE='\\.\pipe\vscode-git-96565dc436-sock'
+export GIT_ASKPASS='c:\Users\floeh\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\git\dist\askpass.sh'
+export VSCODE_GIT_ASKPASS_NODE='C:\Users\floeh\AppData\Local\Programs\Microsoft VS Code\Code.exe'
+export VSCODE_GIT_ASKPASS_EXTRA_ARGS=''
+export VSCODE_GIT_ASKPASS_MAIN='c:\Users\floeh\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\git\dist\askpass-main.js'
+export PATH="C:\Users\floeh\Desktop\INSA\4A\Projet_OCaml\_esy\default\bin;$PATH"
+export cur__etc="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/etc"
+export cur__share="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/share"
+export cur__toplevel="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/toplevel"
+export cur__stublibs="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/stublibs"
+export cur__doc="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/doc"
+export cur__man="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/man"
+export cur__lib="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/lib"
+export cur__sbin="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/sbin"
+export cur__bin="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/bin"
+export cur__install="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70"
+export cur__target_dir="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/b/projet__ocaml-d4887b70"
+export cur__original_root="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml"
+export cur__root="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml"
+export cur__dev="true"
+export cur__version="link-dev:./package.json"
+export cur__name="Projet_OCaml"
+
+#
+# ocaml@4.10.2000@d41d8cd9
+#
+export CAML_LD_LIBRARY_PATH="C:/Users/floeh/.esy/3_/i/ocaml-4.10.2000-64d8b100/lib/ocaml/stublibs;C:/Users/floeh/.esy/3_/i/ocaml-4.10.2000-64d8b100/lib/ocaml;$CAML_LD_LIBRARY_PATH"
+export OCAMLLIB="C:/Users/floeh/.esy/3_/i/ocaml-4.10.2000-64d8b100/lib/ocaml"
+export OCAML_TOPLEVEL_PATH="C:/Users/floeh/.esy/3_/i/ocaml-4.10.2000-64d8b100/lib/ocaml"
+export OCAMLPATH="C:/Users/floeh/.esy/3_/i/ocaml-4.10.2000-64d8b100/lib;$OCAMLPATH"
+export MAN_PATH="C:/Users/floeh/.esy/3_/i/ocaml-4.10.2000-64d8b100/man;$MAN_PATH"
+export PATH="C:/Users/floeh/.esy/3_/i/ocaml-4.10.2000-64d8b100/bin;$PATH"
+
+#
+# Built-in
+#
+export OCAMLFIND_LDCONF="ignore"
+export OCAMLFIND_DESTDIR="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/i/projet__ocaml-d4887b70/lib"
+export DUNE_BUILD_DIR="C:/Users/floeh/Desktop/INSA/4A/Projet_OCaml/_esy/default/store/b/projet__ocaml-d4887b70"
+export DUNE_STORE_ORIG_SOURCE_DIR="true"
+export SHELL="env -i /bin/bash --norc --noprofile"
+export PATH="$PATH;/usr/local/bin;/usr/bin;/bin;/usr/sbin;/sbin;C:/WINDOWS/System32"
