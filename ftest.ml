@@ -1,4 +1,7 @@
 open Gfile
+open Tool
+open Graph
+open Ford_fulkerson
     
 let () =
 
@@ -11,7 +14,6 @@ let () =
          "    🟄  source  : identifier of the source vertex (used by the ford-fulkerson algorithm)\n" ^
          "    🟄  sink    : identifier of the sink vertex (ditto)\n" ^
          "    🟄  outfile : output file in which the result should be written.\n\n") ;
-      exit 0
     end ;
 
 
@@ -26,10 +28,21 @@ let () =
   in
 
   (* Open file *)
-  let graph = from_file infile in
+  let graph = from_file infile in 
 
+  let graph = gmap graph int_of_string in
+
+  (*Algo de Fold Fulkerson *)
+  let chemin = path_search graph 0 3 [0] max_int in
+
+  match chemin with
+    |None -> Printf.printf "chemin null %!"
+    |Some path_res -> let path = path_res in
+
+
+  let graph = gmap (add_flow_to_path graph path) string_of_int in
   (* Rewrite the graph that has been read. *)
-  let () = write_file outfile graph in
+  let () = write_file outfile graph in 
 
+  
   ()
-

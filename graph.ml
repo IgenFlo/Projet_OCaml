@@ -1,5 +1,6 @@
 type id = int
 
+(* Les arcs sortants sont des tuples avec l'id de l'arc et son label*)
 type 'a out_arcs = (id * 'a) list
 
 (* A graph is just a list of pairs: a node & its outgoing arcs. *)
