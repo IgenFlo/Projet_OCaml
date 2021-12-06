@@ -20,7 +20,9 @@
 # Target: ftest.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ftest.cmo, file:ftest.ml, implem, ocaml, quiet }
 /mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamlc.opt -c -o ftest.cmo ftest.ml # cached
 # Target: ford_fulkerson.ml.depends, tags: { extension:ml, file:ford_fulkerson.ml, ocaml, ocamldep, quiet }
-/mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamldep.opt -modules ford_fulkerson.ml > ford_fulkerson.ml.depends
+/mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamldep.opt -modules ford_fulkerson.ml > ford_fulkerson.ml.depends # cached
+# Target: ford_fulkerson.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ford_fulkerson.cmo, file:ford_fulkerson.ml, implem, ocaml, quiet }
+/mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamlc.opt -c -o ford_fulkerson.cmo ford_fulkerson.ml # cached
 # Target: gfile.ml.depends, tags: { extension:ml, file:gfile.ml, ocaml, ocamldep, quiet }
 /mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamldep.opt -modules gfile.ml > gfile.ml.depends # cached
 # Target: gfile.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:gfile.cmo, file:gfile.ml, implem, ocaml, quiet }
@@ -33,8 +35,6 @@
 /mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamldep.opt -modules tool.ml > tool.ml.depends # cached
 # Target: tool.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:tool.cmo, file:tool.ml, implem, ocaml, quiet }
 /mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamlc.opt -c -o tool.cmo tool.ml # cached
-# Target: ford_fulkerson.cmo, tags: { byte, compile, extension:cmo, extension:ml, file:ford_fulkerson.cmo, file:ford_fulkerson.ml, implem, ocaml, quiet }
-/mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamlc.opt -c -o ford_fulkerson.cmo ford_fulkerson.ml
 # Target: ftest.byte, tags: { byte, dont_link_with, extension:byte, file:ftest.byte, link, ocaml, program, quiet }
-/mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamlc.opt graph.cmo tool.cmo ford_fulkerson.cmo gfile.cmo ftest.cmo -o ftest.byte
+/mnt/commetud/GEI/OCaml/.opam/4.08.1/bin/ocamlc.opt graph.cmo tool.cmo ford_fulkerson.cmo gfile.cmo ftest.cmo -o ftest.byte # cached
 # Compilation successful.

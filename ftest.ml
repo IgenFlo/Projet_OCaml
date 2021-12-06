@@ -23,26 +23,23 @@ let () =
   and outfile = Sys.argv.(4)
   
   (* These command-line arguments are not used for the moment. *)
-  and _source = int_of_string Sys.argv.(2)
-  and _sink = int_of_string Sys.argv.(3)
+  and source = int_of_string Sys.argv.(2)
+  and sink = int_of_string Sys.argv.(3)
   in
 
   (* Open file *)
   let graph = from_file infile in 
 
-  let graph = gmap graph int_of_string in
+  let graph_depart = gmap graph int_of_string in
 
   (*Algo de Fold Fulkerson *)
-  let chemin = path_search graph 0 3 [0] max_int in
+  let graph = ford_fulkerson graph_depart source sink in
 
-  match chemin with
-    |None -> Printf.printf "chemin null %!"
-    |Some path_res -> let path = path_res in
+  let graph = to_string_flow_graph graph_depart graph in
 
-
-  let graph = gmap (add_flow_to_path graph path) string_of_int in
+  (* let graph = gmap (graph) string_of_int in *)
   (* Rewrite the graph that has been read. *)
   let () = write_file outfile graph in 
 
-  
-  ()
+  ();
+  export graph;;

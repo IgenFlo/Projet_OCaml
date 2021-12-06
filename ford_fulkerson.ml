@@ -37,4 +37,28 @@ let rec add_flow_to_path graph path_ret =
         |id::rest -> graph                             
 ;;
 
-(* let ford_fulkerson = assert false;; *)
+let rec ford_fulkerson graph src dest = 
+    let path_res = path_search graph src dest [src] max_int in
+        match path_res with
+            | None -> graph
+            | Some chemin -> let new_graph = add_flow_to_path graph chemin in
+                ford_fulkerson new_graph src dest
+    ;;
+
+
+
+let to_flow_graph graph_depart graph_res =
+    e_fold graph_res (fun graph_acu idsrc iddest label -> let found = find_arc graph_depart idsrc iddest in
+        match found with
+            |None -> graph_acu
+            |Some capacite -> add_arc graph_acu idsrc iddest (capacite - label)) (clone_nodes graph_depart)
+;;
+
+let to_string_flow_graph graph_depart graph_res =
+    let str_graph_depart = gmap graph_depart string_of_int in
+    let str_graph_res = gmap graph_res string_of_int in
+    e_fold str_graph_res (fun graph_acu idsrc iddest label -> let found = find_arc str_graph_depart idsrc iddest in
+        match found with
+            |None -> graph_acu
+            |Some capacite -> new_arc graph_acu idsrc iddest ((string_of_int ((int_of_string capacite) - (int_of_string label)))^"/"^capacite)) (clone_nodes str_graph_depart)
+;;

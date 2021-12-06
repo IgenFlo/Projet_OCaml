@@ -14,4 +14,8 @@ val path_search : int graph -> id -> id -> id list -> int ->path_return option
 val add_flow_to_path : int graph -> path_return -> int graph
 
 (* Renvoie un graphe de flot saturé *)
-(* val ford_fulkerson : int graph -> int graph *)
+val ford_fulkerson : int graph -> id -> id -> int graph
+
+val to_flow_graph : int graph -> int graph -> int graph
+
+val to_string_flow_graph : int graph -> int graph -> string graph
