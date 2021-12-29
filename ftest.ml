@@ -2,6 +2,7 @@ open Gfile
 open Tool
 open Graph
 open Ford_fulkerson
+open Biparti
     
 let () =
 
@@ -30,16 +31,19 @@ let () =
   (* Open file *)
   let graph = from_file infile in 
 
-  let graph_depart = gmap graph int_of_string in
+  let bipartite_graph = init_biparti (gmap graph int_of_string) in
+
+  let graph = gmap bipartite_graph string_of_int in
+
+  (* let graph_depart = gmap graph int_of_string in *)
 
   (*Algo de Fold Fulkerson *)
-  let graph = ford_fulkerson graph_depart source sink in
+  (* let graph = ford_fulkerson graph_depart source sink in *)
 
-  let graph = to_string_flow_graph graph_depart graph in
+  (* let graph = to_string_flow_graph graph_depart graph in *)
 
   (* let graph = gmap (graph) string_of_int in *)
   (* Rewrite the graph that has been read. *)
-  let () = write_file outfile graph in 
+  (* let () = write_file outfile graph in *)
 
-  ();
   export graph;;
