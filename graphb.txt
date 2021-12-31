@@ -1,5 +1,6 @@
 % This is a graph for bipartite application | p for "people" & h for "host"
 
+n 0 300 0
 n 200 300 1
 n 200 300 2
 n 200 200 3
@@ -9,6 +10,7 @@ n 380 300 51
 n 380 200 52
 n 200 400 53
 n 380 300 54
+n 550 300 100
 
 e 1 50 0 1
 e 1 51 1 1

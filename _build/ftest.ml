@@ -2,6 +2,7 @@ open Gfile
 open Tool
 open Graph
 open Ford_fulkerson
+open Biparti
     
 let () =
 
@@ -20,7 +21,7 @@ let () =
   (* Arguments are : infile(1) source-id(2) sink-id(3) outfile(4) *)
   
   let infile = Sys.argv.(1)
-  and outfile = Sys.argv.(4)
+  (* and outfile = Sys.argv.(4) *)
   
   (* These command-line arguments are not used for the moment. *)
   and source = int_of_string Sys.argv.(2)
@@ -29,6 +30,10 @@ let () =
 
   (* Open file *)
   let graph = from_file infile in 
+
+  let bipartite_graph = init_biparti (gmap graph int_of_string) 0 100 in
+
+  let graph = gmap bipartite_graph string_of_int in
 
   let graph_depart = gmap graph int_of_string in
 
@@ -39,7 +44,7 @@ let () =
 
   (* let graph = gmap (graph) string_of_int in *)
   (* Rewrite the graph that has been read. *)
-  let () = write_file outfile graph in 
+  (* let () = write_file outfile graph in *)
 
+  export graph;
   ();
-  export graph;;
